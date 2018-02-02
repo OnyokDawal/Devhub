@@ -13,12 +13,12 @@ class OpenSpaceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_open_space)
 
-        val expansionLayoutCollection = ExpansionLayoutCollection()
+       /* val expansionLayoutCollection = ExpansionLayoutCollection()
         expansionLayoutCollection.add(firstText)
         expansionLayoutCollection.add()
 
         expansionLayoutCollection.openOnlyOne(true)
-
+*/
 
     }
 }
