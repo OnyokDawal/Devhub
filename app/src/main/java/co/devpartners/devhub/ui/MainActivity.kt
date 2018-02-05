@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-        bookButton.setOnClickListener(){
+        bookButton.setOnClickListener{
             startActivity<RegisterActivity>()
         }
     }
