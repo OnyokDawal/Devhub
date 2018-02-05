@@ -9,7 +9,7 @@
 
 
     <RelativeLayout
-        android:id="@+id/openSpace"
+        android:id="@+id/openSpaceLayout"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -20,7 +20,7 @@
         >
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/openSpaceImage"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_alignParentStart="true"
@@ -33,29 +33,31 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/openSpaceImage"
             android:text="@string/openspace_title"
             android:textSize="14sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/privateSpace"
+        android:id="@+id/privateSpaceLayout"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_border"
-        app:layout_constraintEnd_toEndOf="@+id/openSpace"
-        app:layout_constraintStart_toStartOf="@+id/openSpace"
-        app:layout_constraintTop_toBottomOf="@+id/openSpace">
+
+        app:layout_constraintEnd_toEndOf="@+id/openSpaceLayout"
+        app:layout_constraintStart_toStartOf="@+id/openSpaceLayout"
+        app:layout_constraintTop_toBottomOf="@+id/openSpaceLayout">
 
         <ImageView
-            android:id="@+id/privateLogo"
+            android:id="@+id/privateSpaceLogoImage"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="24dp"
+
             android:src="@drawable/pornwatcher" />
 
         <TextView
@@ -63,24 +65,24 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:layout_toEndOf="@+id/privateLogo"
+            android:layout_toEndOf="@+id/privateSpaceLogoImage"
             android:text="@string/privatespace_title"
             android:textSize="14sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/conferenceSpace"
+        android:id="@+id/conferenceSpaceLayout"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/button_border"
-        app:layout_constraintEnd_toEndOf="@+id/openSpace"
-        app:layout_constraintStart_toStartOf="@+id/openSpace"
-        app:layout_constraintTop_toBottomOf="@+id/privateSpace">
+        app:layout_constraintEnd_toEndOf="@+id/openSpaceLayout"
+        app:layout_constraintStart_toStartOf="@+id/openSpaceLayout"
+        app:layout_constraintTop_toBottomOf="@+id/privateSpaceLayout">
 
         <ImageView
-            android:id="@+id/conferenceLogo"
+            android:id="@+id/conferenceSpaceLogoImage"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_alignParentStart="true"
@@ -93,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:layout_toEndOf="@+id/conferenceLogo"
+            android:layout_toEndOf="@+id/conferenceSpaceLogoImage"
             android:text="@string/conference_title"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -108,9 +110,9 @@
         android:background="@color/colorEditText"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@id/openSpace"
-        app:layout_constraintStart_toStartOf="@id/openSpace"
-        app:layout_constraintTop_toBottomOf="@id/conferenceSpace"
+        app:layout_constraintEnd_toEndOf="@id/openSpaceLayout"
+        app:layout_constraintStart_toStartOf="@id/openSpaceLayout"
+        app:layout_constraintTop_toBottomOf="@id/conferenceSpaceLayout"
         android:text="NEXT"
         android:textColor="@android:color/black"
         />
