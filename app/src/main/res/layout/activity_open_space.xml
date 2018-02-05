@@ -31,16 +31,41 @@
         android:id="@+id/lengthStayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
         android:text="@string/length_stay"
+        android:textStyle="bold"
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@id/openSpaceText"
         app:layout_constraintStart_toStartOf="parent"
-
         />
 
+    <ExpandableListView
+        android:id="@+id/expandableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
+        app:layout_constraintStart_toEndOf="@id/lengthStayText"
+        app:layout_constraintTop_toBottomOf="@id/lengthStayText"
+        android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight"
+        android:drawSelectorOnTop="true"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        >
+    </ExpandableListView>
 
-
+    <TextView
+        android:id="@+id/checkinTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/check_in"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/lengthStayText"
+        app:layout_constraintEnd_toEndOf="@id/lengthStayText"
+        app:layout_constraintTop_toBottomOf="@id/expandableView"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
