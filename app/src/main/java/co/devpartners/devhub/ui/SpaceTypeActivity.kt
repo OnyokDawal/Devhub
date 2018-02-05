@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import co.devpartners.devhub.R
 import kotlinx.android.synthetic.main.activity_space_type.*
+import org.jetbrains.anko.alert
 import org.jetbrains.anko.startActivity
 
 class SpaceTypeActivity : AppCompatActivity() {
@@ -28,11 +29,30 @@ class SpaceTypeActivity : AppCompatActivity() {
         }
 
         nextButton.setOnClickListener {
-            startActivity<OpenSpaceActivity>()
-            finish()
+            nextPage()
         }
     }
 
+    fun nextPage(){
+        when(selectedSpace){
+            ActivityType.OpenSpaceActivity -> {
+                startActivity<OpenSpaceActivity>()
+                finish()
+            }
+            ActivityType.ConferenceActivity ->{
+                startActivity<ConferenceActivity>()
+                finish()
+            }
+            ActivityType.PrivateActivity -> {
+
+            }
+            null -> {
+                alert("Please select space type"){
+                    title = "Information"
+                }.show()
+            }
+        }
+    }
 
     enum class ActivityType{
         OpenSpaceActivity,
