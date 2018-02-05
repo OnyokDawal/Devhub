@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         bookButton.setOnClickListener{
             startActivity<RegisterActivity>()
+            finish()
         }
     }
 }
