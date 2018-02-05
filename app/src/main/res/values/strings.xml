@@ -18,6 +18,8 @@
     <string name="contact_hint">"Contact Number"</string>
     <string name="reserve_button">NEXT</string>
     <string name="length_stay">Length of stay</string>
+    <string name="check_in">Check-in Time</string>
+    <string name="check_out">Check-out Time</string>
     <string name="length_plan_hour">Hourly</string>
     <string name="length_plan_daily">Daily</string>
     <string name="length_plan_weekly">Weekly</string>
@@ -40,4 +42,7 @@
     <string name="conference_hour_rate">Php 300/ hour</string>
     <string name="conference_capacity">(Up to 10-40 members)</string>
     <string name="title_activity_type_space">TypeSpaceActivity</string>
+
+
+
 </resources>
