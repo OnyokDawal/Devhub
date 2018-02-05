@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import co.devpartners.devhub.R
-import kotlinx.android.synthetic.main.list_group.view.*
-import kotlinx.android.synthetic.main.list_item.view.*
 import android.widget.TextView
 
 
