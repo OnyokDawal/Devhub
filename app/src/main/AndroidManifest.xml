@@ -31,11 +31,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.RegisterActivity" />
         </activity>
-        <activity android:name=".ui.OpenSpaceActivity"
+        <activity
+            android:name=".ui.OpenSpaceActivity"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.SpaceTypeActivity" />
+        </activity>
+        <activity android:name=".ui.ConferenceActivity">
+
+
         </activity>
     </application>
 

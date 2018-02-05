@@ -1,7 +1,8 @@
-package co.devpartners.devhub
+package co.devpartners.devhub.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import co.devpartners.devhub.R
 
 class ConferenceActivity : AppCompatActivity() {
 
