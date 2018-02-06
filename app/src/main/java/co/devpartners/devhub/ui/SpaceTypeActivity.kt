@@ -62,11 +62,9 @@ class SpaceTypeActivity : AppCompatActivity() {
         when(selectedSpace){
             ActivityType.OpenSpaceActivity -> {
                 startActivity<OpenSpaceActivity>()
-                finish()
             }
             ActivityType.ConferenceActivity ->{
                 startActivity<ConferenceActivity>()
-                finish()
             }
             ActivityType.PrivateActivity -> {
 
