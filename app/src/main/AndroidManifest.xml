@@ -38,9 +38,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.SpaceTypeActivity" />
         </activity>
-        <activity android:name=".ui.ConferenceActivity">
-
-
+        <activity android:name=".ui.ConferenceActivity"/>
+        <activity android:name=".ui.PrivateSpaceActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.SpaceTypeActivity" />
         </activity>
     </application>
 
