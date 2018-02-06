@@ -23,8 +23,6 @@ class SpaceTypeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_space_type)
 
-        supportActionBar?.hide()
-
         openSpaceLayout.setOnClickListener {
             selectedSpace = ActivityType.OpenSpaceActivity
             selected(openSpaceLayout,openSpaceImage)
@@ -55,9 +53,6 @@ class SpaceTypeActivity : AppCompatActivity() {
         layout.setBackgroundResource(R.color.colorPrimary)
         image.setColorFilter(Color.argb(255, 255, 255, 255))
     }
-
-
-
     fun nextPage(){
         when(selectedSpace){
             ActivityType.OpenSpaceActivity -> {
@@ -67,6 +62,7 @@ class SpaceTypeActivity : AppCompatActivity() {
                 startActivity<ConferenceActivity>()
             }
             ActivityType.PrivateActivity -> {
+                startActivity<PrivateSpaceActivity>()
 
             }
             null -> {
