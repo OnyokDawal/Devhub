@@ -18,11 +18,13 @@
     <string name="contact_hint">"Contact Number"</string>
     <string name="reserve_button">NEXT</string>
     <string name="length_stay">Length of stay</string>
+    <string name="message_title">Message</string>
     <string name="check_in">Check-in Time</string>
     <string name="check_out">Check-out Time</string>
     <string name="length_plan_hour">Hourly</string>
     <string name="length_plan_daily">Daily</string>
     <string name="length_plan_weekly">Weekly</string>
+    <string name="hint_message">Your message here.</string>
 
     <!-- open space rates -->
     <string name="openspace_title">Open Space</string>
