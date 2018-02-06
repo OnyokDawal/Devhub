@@ -17,8 +17,8 @@ class ConferenceActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(true)
         val adapterRoomType : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1,roomType)
         val adapterSchedule : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1,schedule)
-        roomTypeSpinner.adapter = adapterRoomType
-        scheduleSpinner.adapter = adapterSchedule
+     /*   roomTypeSpinner.adapter = adapterRoomType
+        scheduleSpinner.adapter = adapterSchedule*/
     }
 
 }
