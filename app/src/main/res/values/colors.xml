@@ -6,5 +6,5 @@
     <color name="colorAccent">#000000</color>
     //added colors
     <color name="colorPrimaryTransparent">#ccfff3e0</color>
-    <color name="colorEditText">#E53935</color>
+    <color name="colorEditText">#ffab00</color>
 </resources>
