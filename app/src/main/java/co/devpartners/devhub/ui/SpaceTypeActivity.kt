@@ -41,7 +41,7 @@ class SpaceTypeActivity : AppCompatActivity() {
         }
     }
 
-    fun selected(layout : RelativeLayout , image : ImageView){
+    fun selected(layout : RelativeLayout? , image : ImageView?){
 
         if(preImage != null && prevLayout != null){
             preImage!!.setColorFilter(Color.argb(0, 255, 255, 255))
@@ -50,8 +50,8 @@ class SpaceTypeActivity : AppCompatActivity() {
 
         preImage = image
         prevLayout = layout
-        layout.setBackgroundResource(R.color.colorPrimary)
-        image.setColorFilter(Color.argb(255, 255, 255, 255))
+        layout?.setBackgroundResource(R.color.colorPrimary)
+        image?.setColorFilter(Color.argb(255, 255, 255, 255))
     }
     fun nextPage(){
         when(selectedSpace){
