@@ -96,7 +96,6 @@
         android:textSize="17dp"
         android:textStyle="bold"
         android:background="@color/colorEditText"
-        android:textColor="@android:color/black"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
         android:paddingLeft="10dp"
@@ -172,7 +171,6 @@
         android:textSize="17dp"
         android:textStyle="bold"
         android:background="@color/colorEditText"
-        android:textColor="@android:color/black"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:paddingLeft="10dp"
@@ -237,7 +235,6 @@
         android:gravity="center"
         android:hint="@string/hint_message"
         android:inputType="textMultiLine"
-        android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@string/message_title"
         app:layout_constraintTop_toBottomOf="@id/messageTextView" />
