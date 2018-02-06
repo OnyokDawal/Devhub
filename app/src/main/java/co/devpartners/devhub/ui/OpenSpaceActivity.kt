@@ -16,7 +16,6 @@ class OpenSpaceActivity : AppCompatActivity() {
 
         val listHeader = listOf("Length Plan")
         val numbersList = listOf("Hourly", "Daily", "Weekly")
-
         val listChild = HashMap<String, List<String>>()
         listChild.put(listHeader[0],numbersList)
 
