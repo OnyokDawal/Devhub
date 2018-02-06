@@ -29,8 +29,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif-monospacepace"
         android:gravity="center"
-        android:text="The #1 coworking space in
-Davao City"
+        android:text="The #1 coworking space in\nDavao City"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
