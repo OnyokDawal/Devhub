@@ -4,8 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/devhub"
     tools:context="co.devpartners.devhub.ui.RegisterActivity">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryTransparent"
+      >
 
         <ImageView
             android:id="@+id/devHubLogo"
@@ -31,7 +37,6 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-
             app:layout_constraintTop_toBottomOf="@id/devHubLogo" />
 
 
@@ -158,4 +163,5 @@
             app:layout_constraintEnd_toEndOf="@id/firstnameEditText"
             app:layout_constraintStart_toStartOf="@id/firstnameEditText"
             app:layout_constraintTop_toBottomOf="@+id/contactEditText" />
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
