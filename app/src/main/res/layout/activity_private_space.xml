@@ -4,9 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/devhub"
     tools:context="co.devpartners.devhub.ui.PrivateSpaceActivity">
 
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryTransparent"
+        >
     <ImageView
         android:id="@+id/privateSpaceLogo"
         android:layout_width="90dp"
@@ -47,7 +53,7 @@
     <ExpandableListView
         android:id="@+id/expandableView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="1dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp"
         android:drawSelectorOnTop="true"
@@ -225,20 +231,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/messageTextView" />
 
-    <Button
-        android:id="@+id/saveButton"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorEditText"
-        android:text="SAVE"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/timepickPicker"
-        app:layout_constraintStart_toStartOf="@+id/checkinTextView"
-        app:layout_constraintTop_toBottomOf="@+id/messageEditText" />
+        <Button
+            android:id="@+id/saveButton"
+            android:text="SAVE"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messageEditText" />
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
