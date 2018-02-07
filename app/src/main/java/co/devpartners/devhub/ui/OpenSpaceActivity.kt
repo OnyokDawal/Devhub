@@ -48,6 +48,8 @@ class OpenSpaceActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener
     override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, position: Int, p3: Long) {
         message!!.text = " Selected : "+timepick[position]
     }
+
+    //datepicker
     fun funDate(view : View){
 
         val calendar = Calendar.getInstance()
