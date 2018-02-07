@@ -94,21 +94,19 @@
             android:layout_height="28dp"
             android:layout_marginStart="8dp"
             android:src="@drawable/calendar"
-            app:layout_constraintEnd_toStartOf="@id/datepickPicker"
+            app:layout_constraintEnd_toStartOf="@id/datePickerButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/datepickPicker" />
+            app:layout_constraintTop_toTopOf="@id/datePickerButton" />
 
-                <TextView
-                    android:id="@+id/datepickPicker"
+                <Button
+                    android:id="@+id/datePickerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:background="@color/colorEditText"
                     android:gravity="center_vertical"
                     android:hint="yyyy/mm/dd"
-                    android:onClick="funDate"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
                     android:textSize="17dp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@id/dateLogo"
@@ -123,9 +121,9 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="8dp"
             android:src="@drawable/clock"
-            app:layout_constraintBottom_toBottomOf="@id/datepickPicker"
+            app:layout_constraintBottom_toBottomOf="@id/datePickerButton"
             app:layout_constraintEnd_toStartOf="@id/timepickPicker"
-            app:layout_constraintStart_toEndOf="@id/datepickPicker"
+            app:layout_constraintStart_toEndOf="@id/datePickerButton"
             app:layout_constraintTop_toBottomOf="@id/checkinTextView" />
 
         <TextView
@@ -156,7 +154,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/checkinTextView"
             app:layout_constraintStart_toStartOf="@+id/checkinTextView"
-            app:layout_constraintTop_toBottomOf="@id/datepickPicker" />
+            app:layout_constraintTop_toBottomOf="@id/datePickerButton" />
 
         <ImageView
             android:id="@+id/checkoutDateLogo"
