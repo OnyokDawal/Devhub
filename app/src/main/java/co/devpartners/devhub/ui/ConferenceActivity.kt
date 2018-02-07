@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import co.devpartners.devhub.R
 import co.devpartners.devhub.api.events.CustomDatePickerDialog
 import kotlinx.android.synthetic.main.activity_conference.*
+import kotlinx.android.synthetic.main.datepicker.*
 
 
 class ConferenceActivity : AppCompatActivity() {
@@ -23,12 +24,13 @@ class ConferenceActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(true)
         val adapterRoomType : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1,roomType)
         val adapterSchedule : ArrayAdapter<String> = ArrayAdapter(this, android.R.layout.simple_list_item_1,schedule)
-     roomTypeSpinner.adapter = adapterRoomType
+        roomTypeSpinner.adapter = adapterRoomType
         scheduleSpinner.adapter = adapterSchedule
 
         datePickerButton.setOnClickListener{
                     datepicker.show(this)
         }
+
 
     }
 
