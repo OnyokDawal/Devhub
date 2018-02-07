@@ -35,31 +35,43 @@
         app:layout_constraintStart_toStartOf="@id/privateSpaceLogo"
         app:layout_constraintTop_toBottomOf="@id/privateSpaceLogo" />
 
-    <TextView
-        android:id="@+id/lengthStayText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/length_stay"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintEnd_toStartOf="@+id/openSpaceLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/openSpaceText" />
+        <TextView
+            android:id="@+id/lengthStayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/length_stay"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/openSpaceLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/openSpaceText" />
 
-    <ExpandableListView
-        android:id="@+id/expandableView"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="0.5dp"
-        android:drawSelectorOnTop="true"
-        android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
-        app:layout_constraintStart_toEndOf="@id/lengthStayText"
-        app:layout_constraintTop_toBottomOf="@id/lengthStayText"></ExpandableListView>
+        <LinearLayout
+            android:id="@+id/expandableView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorEditText"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/lengthStayText"
+            app:layout_constraintTop_toBottomOf="@id/lengthStayText">
+            <TextView
+                android:id="@+id/lengthMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
 
     <TextView
         android:id="@+id/checkinTextView"
@@ -86,6 +98,7 @@
         app:layout_constraintTop_toTopOf="@id/datepickPicker" />
 
     <TextView
+        android:clickable="true"
         android:id="@+id/datepickPicker"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
