@@ -14,7 +14,7 @@ import java.util.Calendar.MONTH
 class OpenSpaceActivity : AppCompatActivity(),AdapterView.OnItemSelectedListener {
 
 
-    //hi
+    //aayooo
     var timepick = arrayOf("Hourly", "Daily", "Weekly")
     val datepicker = CustomDatePickerDialog()
     var spinner: Spinner? = null
